@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "esbuild fe/src/index.js --bundle --outfile=fe/public/index.js",
+    "dev": "esbuild fe/src/index.js --bundle --outfile=fe/public/index.js --watch",
     "build2": "hammer --platform browser fe/src/index.js fe/public/index.js",
+    "start:w": "node --watch be/server.mjs",
     "start": "node be/server.mjs"
   },
   "author": "",

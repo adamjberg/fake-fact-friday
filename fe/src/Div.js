@@ -1,8 +1,9 @@
 export function Div({
   innerText,
   children,
-  styles
-}) {
+  styles,
+  onClick
+} = {}) {
   const el = document.createElement("div");
 
   if (styles) {
@@ -19,6 +20,10 @@ export function Div({
 
   if (children) {
     children.forEach(el.appendChild.bind(el));
+  }
+
+  if (onClick) {
+    el.addEventListener("click", onClick.bind(el));
   }
 
   return el;
