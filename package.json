@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "hammer --platform browser fe/src/index.js public/index.js"
+    "build": "hammer --platform browser fe/src/index.js fe/public/index.js",
+    "start": "node be/server.mjs"
   },
   "author": "",
   "license": "ISC"
