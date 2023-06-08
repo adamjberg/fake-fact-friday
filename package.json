@@ -1,0 +1,11 @@
+{
+  "name": "fake-fact-friday",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hammer --platform browser fe/src/index.js public/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
