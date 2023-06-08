@@ -1,5 +1,6 @@
-const el = document.createElement('div');
+import { Div } from "./Div";
 
-el.innerHTML = 'Hello World 3';
 
-document.body.appendChild(el);
+document.body.appendChild(Div({
+  innerText: 'Hello World 4'
+}));
