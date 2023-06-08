@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "hammer --platform browser fe/src/index.js fe/public/index.js",
+    "build": "esbuild fe/src/index.js --bundle --outfile=fe/public/index.js",
+    "build2": "hammer --platform browser fe/src/index.js fe/public/index.js",
     "start": "node be/server.mjs"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "esbuild": "^0.17.19"
+  }
 }
