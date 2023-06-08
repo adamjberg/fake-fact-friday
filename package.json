@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@xyz-digital/dom": "^0.0.8",
     "esbuild": "^0.17.19"
   }
 }

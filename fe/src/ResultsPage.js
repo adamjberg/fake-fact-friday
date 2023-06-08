@@ -1,7 +1,9 @@
-import { Div } from "./Div";
+import { Div } from "@xyz-digital/dom";
 
 export function ResultsPage() {
   return Div({
-    innerText: "Results Page"
+    attr: {
+      innerText: "Results Page"
+    }
   });
 }

@@ -1,4 +1,4 @@
-import { Div } from "./Div";
+import { Div } from "@xyz-digital/dom";
 import { HomePage } from "./HomePage";
 import { ResultsPage } from "./ResultsPage";
 

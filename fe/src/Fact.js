@@ -1,4 +1,4 @@
-import { Div } from "./Div";
+import { Div } from "@xyz-digital/dom";
 
 export function Fact({
   text,
@@ -6,10 +6,12 @@ export function Fact({
   onClick
 }) {
   return Div({
-    innerText: text,
+    attr: {
+      innerText: text,
+      onclick: onClick
+    },
     styles: {
       color: isFake ? "red" : "green"
     },
-    onClick
   });
 }
